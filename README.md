@@ -6,7 +6,7 @@ This software is a basic "Hello World" program written in Python. It prints a gr
 
 The purpose of this program is to demonstrate the ability to write and execute a Python script using a development environment, serving as a first step into Python programming.
 
-[Software Demo Video https://youtu.be/ak3PHilUTXs?si=J0K8p4eylfOARolB
+[Software Demo Video (https://www.youtube.com/watch?v=ak3PHilUTXs)]
 
 # Development Environment
 
