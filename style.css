@@ -1,91 +1,98 @@
-/* style.css */
-
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-header,
-footer {
-  background-color: #327790;
-  color: #f9f9fa;
-  padding: 1em;
-  text-align: center;
+header {
+    background-color: #396E94;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
 }
 
-nav {
-  margin-top: 0.5em;
+h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
-nav a {
-  color: white;
-  margin: 0 1em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  padding: 2em;
-  max-width: 960px;
-  margin: auto;
+main {
+    flex: 1;
+    padding: 2em;
 }
 
 section {
-  margin-bottom: 3em;
+    margin-bottom: 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-  color: #235061;
+h2 {
+    color: #396E94;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5em;
 }
 
 .project {
-  background-color: #fff;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0.5em 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1em;
 }
 
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5em;
-  margin: 0.5em 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.project h3 {
+    margin: 0.5em 0;
+    text-align: center;
 }
 
-form button {
-  background-color: #327790;
-  color: white;
-  padding: 0.5em 1.5em;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.project p {
+    margin: 0.5em 0;
+    text-align: center;
 }
 
-form button:hover {
-  background-color: #285f72;
+.project a {
+    color: #396E94;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #396E94;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 @media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 0.5em 0;
-  }
+    body {
+        padding: 1em;
+    }
+
+    section {
+        margin-bottom: 1em;
+    }
 }
